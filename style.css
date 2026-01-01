@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #667eea, #764ba2);
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 30px 20px;
+    color: white;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    padding-left: 10px;
+    color: #ffd700;
+}
+
+/* Main Content */
+.main {
+    margin-left: 240px;
+    padding: 40px;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    font-size: 22px;
+}
+
+.card p {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background: #6c63ff;
+    color: white;
+}
+
+tr:hover {
+    background: #f2f2f2;
+}
